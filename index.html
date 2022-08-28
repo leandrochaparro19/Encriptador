@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./img/Logo.png" alt="logo-alura">
+        <!-- <button class="buttonDark" onclick="btnDarkmode()">DarkMode</button> -->
+    </header>
+    <main>
+        
+        <section class="encriptar">
+            <textarea class="msj-input" id=""  placeholder="Incerte aqui su texto" required autofocus></textarea>
+            
+            <div class="btn-encriptador">
+                <div class="btn">
+                    <button class="boton" onclick="btnEncriptar()">Encriptar
+                    <img class="icono" src="./img/bloqueo.png" alt="candadoCerrado">
+                    </button>
+                </div>
+                <div class="btn">
+                    <button class="boton" onclick="btnDesencriptar()">Desencriptar
+                    <img class="icono" src="./img/desbloquear.png" alt="candadoAbierto">
+                    </button>
+                </div>
+            </div>
+        
+        </section>
+
+        <section class="output">
+            
+            <textarea class="msj-output" required readonly></textarea> <!--readonly para que no se pueda ingresar texto aqui-->
+    
+            <div class="presentacion" id="myDIV" >
+                <img class="munieco" src="./img/Muñeco.png" alt="">
+                <p class="resaltado">ningún mensaje fue encontrado</p>
+                <p>Debe estar en minusculas y no debe contener caracteres especiales</p>
+            </div> 
+            
+            <div class="btn">
+            <button class="boton" type="submit" onclick="btnCopiar()">Copiar
+                <img class="icono" src="./img/copy.png" alt="iconoCopiar">
+            </button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img id="img-1" class="img-programador" src="./img/programador2.png" alt="img-Programador">
+        <p class="datos-desarrollador">&copy Copyright Chaparro Leandro - 2022</p>
+        <img id="img-2" class="img-programador" src="./img/programador2.png" alt="img-Programador">
+
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
